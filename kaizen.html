@@ -1,95 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="mn">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kaizen Report Dashboard</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background-color: #F8F9FA;
-            font-family: 'Inter', sans-serif;
-        }
-        .card {
-            border: none;
-            border-radius: 1rem;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-        }
-        .title-bar {
-            font-size: 24px;
-            font-weight: 600;
-            color: #1D3557;
-        }
-        .subtitle {
-            color: #6C757D;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Манай хурим</title>
 </head>
 <body>
-<div class="container py-4">
-    <div class="mb-4">
-        <h1 class="title-bar">📊 Kaizen Тайлангийн Хяналтын Самбар</h1>
-        <p class="subtitle">Сүүлийн мэдээллүүдийг тоймлон харуулах хэсэг</p>
-    </div>
-
-    <div class="row g-4">
-        <div class="col-md-4">
-            <div class="card p-3">
-                <h5>Нийт Kaizen санаа</h5>
-                <h2 class="text-primary">248</h2>
-                <p class="text-muted">Өссөн: 12% (сүүлийн сард)</p>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card p-3">
-                <h5>Хэрэгжсэн санаа</h5>
-                <h2 class="text-success">174</h2>
-                <p class="text-muted">Эерэг нөлөө бүхий шийдлүүд</p>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="card p-3">
-                <h5>Хүлээгдэж буй</h5>
-                <h2 class="text-warning">34</h2>
-                <p class="text-muted">Баталгаажуулах шатанд байна</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="mt-5">
-        <div class="card p-4">
-            <h4 class="mb-3">📈 Тайлангийн график</h4>
-            <canvas id="kaizenChart" height="100"></canvas>
-        </div>
-    </div>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script>
-    const ctx = document.getElementById('kaizenChart').getContext('2d');
-    new Chart(ctx, {
-        type: 'line',
-        data: {
-            labels: ['1 сар', '2 сар', '3 сар', '4 сар', '5 сар'],
-            datasets: [{
-                label: 'Нийт Kaizen санаа',
-                data: [44, 56, 72, 84, 50],
-                borderColor: '#1D3557',
-                backgroundColor: 'rgba(29, 53, 87, 0.1)',
-                tension: 0.3,
-                fill: true
-            }]
-        },
-        options: {
-            responsive: true,
-            plugins: {
-                legend: { display: true }
-            },
-            scales: {
-                y: { beginAtZero: true }
-            }
-        }
-    });
-</script>
+  <h1>Манай хуримд урьж байна</h1>
+  <p>Билгүүн ба Урнаа</p>
+  <img src="wedding.jpg" width="300" alt="Хуримын зураг">
 </body>
 </html>
